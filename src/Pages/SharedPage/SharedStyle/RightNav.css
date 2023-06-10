@@ -1,0 +1,9 @@
+.advertize {
+    background-image: url('/bg.png');
+}
+
+.catagory-link:hover {
+    background-color: rgb(221, 221, 221);
+    transform: scale(1.1, 1.2);
+    transition: transform 1s;
+}
