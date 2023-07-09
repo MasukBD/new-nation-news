@@ -4,6 +4,8 @@ import HomePage from "../Pages/Home/HomePage";
 import Catagory from "../Pages/Catagory/Catagory";
 import NewsLayout from "../Layout/NewsLayout";
 import NewsPage from "../Pages/NewsPage/NewsPage";
+import Login from "../Pages/User/Login";
+import Register from "../Pages/User/Register";
 
 const router = createBrowserRouter([
     {
@@ -19,7 +21,7 @@ const router = createBrowserRouter([
                 path: '/catagories/:id',
                 element: <Catagory></Catagory>,
                 loader: ({ params }) => fetch(`http://localhost:5000/catagories/${params.id}`)
-            }
+            },
         ]
     },
     {
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
                 loader: ({ params }) => fetch(`http://localhost:5000/news/${params.id}`)
             }
         ]
+    },
+    {
+        path: '/login',
+        element: <Login></Login>
+    },
+    {
+        path: '/register',
+        element: <Register></Register>
     }
 ])
 
