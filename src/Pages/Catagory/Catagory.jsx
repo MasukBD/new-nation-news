@@ -9,7 +9,7 @@ const Catagory = () => {
     return (
         <div>
             {
-                catagorizedNews.map(n => <NewsCard key={n._id} news={n}></NewsCard>)
+                catagorizedNews.length > 0 ? catagorizedNews.map(n => <NewsCard key={n._id} news={n}></NewsCard>) : <h2>No Data Available at this moment!!!</h2>
             }
         </div>
     );
