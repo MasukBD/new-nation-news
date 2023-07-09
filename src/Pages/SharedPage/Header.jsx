@@ -16,7 +16,7 @@ const Header = () => {
             </div>
             <Container className='my-1'>
                 <div className='d-flex bg-body-secondary p-2 my-2'>
-                    <strong className='bg-danger py-1 px-2 bg-opacity-75 text-white rounded'>Latest</strong>
+                    <strong className='bg-danger py-1 px-2 bg-opacity-75 text-white rounded'>Breaking</strong>
                     <Marquee>
                         I can be a React component, multiple React components, or just some text.
                     </Marquee>
@@ -27,13 +27,13 @@ const Header = () => {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mx-auto">
-                                <Nav.Link className='fw-semibold' href="#features">Home</Nav.Link>
-                                <Nav.Link className='fw-semibold' href="#pricing">About</Nav.Link>
-                                <Nav.Link className='fw-semibold' href="#pricing">Career</Nav.Link>
+                                <Nav.Link className='fw-semibold' href="/">Home</Nav.Link>
+                                <Nav.Link className='fw-semibold' href="">About</Nav.Link>
+                                <Nav.Link className='fw-semibold' href="">Career</Nav.Link>
                             </Nav>
                             <Nav className='d-flex align-items-center justify-content-center'>
-                                <Nav.Link className='fw-semibold' href="#pricing">Profile</Nav.Link>
-                                <Nav.Link href="#pricing"><Button variant="dark">Sign In</Button></Nav.Link>
+                                <Nav.Link className='fw-semibold' href="">Profile</Nav.Link>
+                                <Nav.Link href=""><Button variant="dark">Sign In</Button></Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 
-const Footer = () => {
+const NewsPage = () => {
     return (
         <div>
-            <p className='text-center'>All Right Reserved!</p>
+            <h1>Newspage</h1>
         </div>
     );
 };
 
-export default Footer;
+export default NewsPage;
