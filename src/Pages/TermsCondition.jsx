@@ -8,9 +8,9 @@ const TermsCondition = () => {
         <>
             <Navigationbar></Navigationbar>
             <div>
-                <h3 className='text center'>This is Terms and Condition Page We will add all the term and condition later and degin it later then!!</h3>
+                <h3 className='text-center'>This is Terms and Condition Page We will add all the term and condition later and degin it later then!!</h3>
 
-                <Link to='/register'>Back to Register Page</Link>
+                <Link className='text-center' to='/register'>Back to Register Page</Link>
             </div>
         </>
     );
