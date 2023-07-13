@@ -17,12 +17,12 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <HomePage></HomePage>,
-                loader: () => fetch('http://localhost:5000/news')
+                loader: () => fetch('https://new-nation-news-server.vercel.app/news')
             },
             {
                 path: '/catagories/:id',
                 element: <Catagory></Catagory>,
-                loader: ({ params }) => fetch(`http://localhost:5000/catagories/${params.id}`)
+                loader: ({ params }) => fetch(`https://new-nation-news-server.vercel.app/catagories/${params.id}`)
             },
         ]
     },
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
             {
                 path: '/news/:id',
                 element: <PrivateRoute><NewsPage></NewsPage></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/news/${params.id}`)
+                loader: ({ params }) => fetch(`https://new-nation-news-server.vercel.app/news/${params.id}`)
             }
         ]
     },

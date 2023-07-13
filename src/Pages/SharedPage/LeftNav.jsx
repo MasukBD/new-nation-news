@@ -9,7 +9,7 @@ import sideImage3 from '../../assets/images/3.png';
 const LeftNav = () => {
     const [catagory, setCatagory] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/catagories')
+        fetch('https://new-nation-news-server.vercel.app/catagories')
             .then(res => res.json())
             .then(data => setCatagory(data))
             .catch(error => {
