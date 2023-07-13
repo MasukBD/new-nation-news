@@ -16,7 +16,6 @@ const LeftNav = () => {
                 console.log(error.message);
             })
     }, [])
-    console.log(catagory)
     return (
         <>
             <div>
