@@ -2,8 +2,10 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import NewsCard from './NewsCard/NewsCard';
+import useTitle from '../../Hook/useTitle';
 
 const HomePage = () => {
+    useTitle('Home')
     const allNews = useLoaderData();
     return (
         <div>

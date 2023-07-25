@@ -5,9 +5,11 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Navigationbar from '../SharedPage/Navigationbar';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { toast } from 'react-hot-toast';
+import useTitle from '../../Hook/useTitle';
 
 const Login = () => {
 
+    useTitle('login')
     const { logIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();

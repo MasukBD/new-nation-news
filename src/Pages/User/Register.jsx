@@ -6,9 +6,11 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { updateProfile } from 'firebase/auth';
 import { toast } from 'react-hot-toast';
+import useTitle from '../../Hook/useTitle';
 
 const Register = () => {
 
+    useTitle('register')
     const { createUserByEmail } = useContext(AuthContext);
     const [termAccept, setTermAccept] = useState(false);
 

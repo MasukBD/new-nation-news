@@ -7,8 +7,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import RightNav from '../Pages/SharedPage/RightNav';
+import useTitle from '../Hook/useTitle';
 
 const NewsLayout = () => {
+    useTitle('News Details');
     return (
         <div>
             <Header></Header>

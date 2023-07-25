@@ -8,8 +8,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import LeftNav from '../Pages/SharedPage/LeftNav';
 import RightNav from '../Pages/SharedPage/RightNav';
+import useTitle from '../Hook/useTitle';
 
 const Main = () => {
+    useTitle('Home');
     return (
         <div>
             <Header></Header>

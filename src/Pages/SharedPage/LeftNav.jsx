@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import sideImage1 from '../../assets/images/1.png';
 import sideImage2 from '../../assets/images/2.png';
 import sideImage3 from '../../assets/images/3.png';
+import useTitle from '../../Hook/useTitle';
 
 const LeftNav = () => {
     const [catagory, setCatagory] = useState([]);
@@ -16,6 +17,8 @@ const LeftNav = () => {
                 console.log(error.message);
             })
     }, [])
+
+
     return (
         <>
             <div>
@@ -26,6 +29,9 @@ const LeftNav = () => {
                         <Link to={`/catagories/${c.id}`} className='text-decoration-none text-black d-block'>
                             {c.name}
                         </Link></p>)
+                }
+                {
+                    catagory[1] === useTitle('Breaking News')
                 }
             </div>
             <div>
